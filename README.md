@@ -1,2 +1,1 @@
-# PortAUTOSARDriver_AVR
-Manually implemented AUTOSAR Port Driver for ATmega16
+SWS Autosar drivers implementations based on the std SWS and SRS documentations
