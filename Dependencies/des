@@ -1,0 +1,9 @@
+Implementations of common dependencies files such as
+
+AUTOSAR Files:
+Compiler.h
+Std_Types.h
+Platform.h
+
+Non AUTOSAR Files:
+Bit_Manipulation.h
