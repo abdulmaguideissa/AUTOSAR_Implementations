@@ -204,25 +204,22 @@ typedef struct
 
 /* Port pin direction type, pin direction is MCU specific.
 Values of this enumeration are based on the MCU architecture that is being used */
-typedef enum
-{
-	PORT_PIN_IN,
-	PORT_PIN_OUT
+typedef uint8 Port_PinDirectionType;
+#define	PORT_PIN_IN                   ((Port_PinDirectionType)0U)
+#define	PORT_PIN_OUT				  ((Port_PinDirectionType)1U)
 #if (PORT_PIN_MODE == STD_ON)
-	,
-	PORT_PIN_MODE_ADC,
-	PORT_PIN_MODE_CAN,
-	PORT_PIN_MODE_DIO,
-	PORT_PIN_MODE_DIO_GPT,
-	PORT_PIN_MODE_DIO_WDG,
-	PORT_PIN_MODE_FLEXRAY,
-	PORT_PIN_MODE_ICU,
-	PORT_PIN_MODE_LIN,
-	PORT_PIN_MODE_MEM,
-	PORT_PIN_MODE_PWM,
-	PORT_PIN_MODE_SPI
+#define	PORT_PIN_MODE_ADC             ((Port_PinDirectionType)2U)
+#define	PORT_PIN_MODE_CAN             ((Port_PinDirectionType)3U)
+#define	PORT_PIN_MODE_DIO             ((Port_PinDirectionType)4U)
+#define	PORT_PIN_MODE_DIO_GPT         ((Port_PinDirectionType)5U)
+#define	PORT_PIN_MODE_DIO_WDG         ((Port_PinDirectionType)6U)
+#define	PORT_PIN_MODE_FLEXRAY         ((Port_PinDirectionType)7U)
+#define	PORT_PIN_MODE_ICU             ((Port_PinDirectionType)8U)
+#define	PORT_PIN_MODE_LIN             ((Port_PinDirectionType)9U)
+#define	PORT_PIN_MODE_MEM             ((Port_PinDirectionType)10U)
+#define	PORT_PIN_MODE_PWM             ((Port_PinDirectionType)11U)
+#define	PORT_PIN_MODE_SPI             ((Port_PinDirectionType)12U)
 #endif /* (PORT_PIN_MODE == STD_ON) */
-}Port_PinDirectionType;
 
 /***************************************************************
 *                    Functions Prototypes                      *
